@@ -14,12 +14,52 @@
         <div class="container">
           <a class="navbar-brand" href="#">
             <img class="logoBarraNav" src="./img/descarga.png" alt="Logo de barra de nav" width="200" height="170">
-            <div class="container">
-                <h2><a class="suscribirse" href="Suscribirse">SUSCRIBIRSE</a> <a class="tienda" href="Tienda">TIENDA</a> <a class="sobreNosotros" href="Sobre nosotros">SOBRE NOSOTROS</a> <a class="contacto" href="Contacto">CONTACTO</a></h2>
-            </div>
           </a>
         </div>
       </nav>
+
+      <div class="itemsNav">
+       <div class="container">
+        <div class="row">
+          <div class="col">
+            <a class="suscribirse" href="#">Suscribirse</a>
+          </div>
+          <div class="col">
+            <div class="dropdown">
+              <a class="dropdown-toggle tienda" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                Tienda
+              </a>
+            
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Remeras</a></li>
+                <li><a class="dropdown-item" href="#">Tops</a></li>
+                <li><a class="dropdown-item" href="#">Polleras</a></li>
+                <li><a class="dropdown-item" href="#">Vestidos</a></li>
+                <li><a class="dropdown-item" href="#">Bolsos</a></li>
+                <li><a class="dropdown-item" href="#">Gift card</a></li>
+                <li><a class="dropdown-item" href="#">Box de cumpleaños</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="dropdown">
+              <a class="dropdown-toggle sobreNosotros" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                Sobre Nosotros
+              </a>
+            
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Contacto</a></li>
+                <li><a class="dropdown-item" href="#">Opiniones</a></li>
+                <li><a class="dropdown-item" href="#">Condiciones de devolucion</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <a class="contacto" href="#">Contacto</a>
+          </div>
+        </div>
+       </div>
+      </div>
 
       <div class="contenidoInicio">
         <h4 class="subtitulo1">NUESTROS PRODUCTOS</h4>
@@ -27,13 +67,13 @@
       </div>
         <ul class="nav nav-pills mb-3 cuerpo" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Bolsas</button>
+              <button class="nav-link active botonVerProductos" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Bolsos</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Carteras</button>
+              <button class="nav-link botonVerProductos" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Tops</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Riñoneras</button>
+              <button class="nav-link botonVerProductos" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Vestidos</button>
             </li>
           </ul>
           <div class="tab-content contenedorCartas" id="pills-tabContent">
@@ -45,7 +85,9 @@
                             <div class="card-body">
                               <h5 class="card-title1">Articulo</h5>
                               <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, ab.</p>
-                              <a href="#" class="btn btn-primary">Ver mas</a>
+                              <div class="d-grid gap-2">
+                                <button class="btn botonVerMas" type="button">Ver mas</button>
+                              </div>
                             </div>
                           </div>
                           <div class="card carta2" style="width: 18rem;">
@@ -53,7 +95,9 @@
                             <div class="card-body">
                               <h5 class="card-title2">Articulo</h5>
                               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, odit.</p>
-                              <a href="#" class="btn btn-primary">Ver mas</a>
+                              <div class="d-grid gap-2">
+                                <button class="btn botonVerMas" type="button">Ver mas</button>
+                              </div>
                             </div>
                           </div>
                           <div class="card" style="width: 18rem;">
@@ -61,7 +105,9 @@
                             <div class="card-body">
                               <h5 class="card-title3">Articulo</h5>
                               <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptate!</p>
-                              <a href="#" class="btn btn-primary">Ver mas</a>
+                              <div class="d-grid gap-2">
+                                <button class="btn botonVerMas" type="button">Ver mas</button>
+                              </div>
                             </div>
                           </div>
                     </div>
@@ -75,7 +121,9 @@
                             <div class="card-body">
                               <h5 class="card-title">Articulo</h5>
                               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, sit.</p>
-                              <a href="#" class="btn btn-primary">Ver mas</a>
+                              <div class="d-grid gap-2">
+                                <button class="btn botonVerMas" type="button">Ver mas</button>
+                              </div>
                             </div>
                           </div>
                           <div class="card carta2" style="width: 18rem;">
@@ -83,7 +131,9 @@
                             <div class="card-body">
                               <h5 class="card-title">Articulo</h5>
                               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quam?</p>
-                              <a href="#" class="btn btn-primary">Ver mas</a>
+                              <div class="d-grid gap-2">
+                                <button class="btn botonVerMas" type="button">Ver mas</button>
+                              </div>
                             </div>
                           </div>
                           <div class="card" style="width: 18rem;">
@@ -91,7 +141,9 @@
                             <div class="card-body">
                               <h5 class="card-title">Articulo</h5>
                               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, laboriosam.</p>
-                              <a href="#" class="btn btn-primary">Ver mas</a>
+                              <div class="d-grid gap-2">
+                                <button class="btn botonVerMas" type="button">Ver mas</button>
+                              </div>
                             </div>
                           </div>
                     </div>
@@ -105,7 +157,9 @@
                             <div class="card-body">
                               <h5 class="card-title">Articulo</h5>
                               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dolores.</p>
-                              <a href="#" class="btn btn-primary">Ver mas</a>
+                              <div class="d-grid gap-2">
+                                <button class="btn botonVerMas" type="button">Ver mas</button>
+                              </div>
                             </div>
                           </div>
                           <div class="card carta2" style="width: 18rem;">
@@ -113,7 +167,9 @@
                             <div class="card-body">
                               <h5 class="card-title">Articulo</h5>
                               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dignissimos!</p>
-                              <a href="#" class="btn btn-primary">Ver mas</a>
+                              <div class="d-grid gap-2">
+                                <button class="btn botonVerMas" type="button">Ver mas</button>
+                              </div>
                             </div>
                           </div>
                           <div class="card" style="width: 18rem;">
@@ -121,7 +177,9 @@
                             <div class="card-body">
                               <h5 class="card-title">Articulo</h5>
                               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cupiditate?</p>
-                              <a href="#" class="btn btn-primary">Ver mas</a>
+                              <div class="d-grid gap-2">
+                                <button class="btn botonVerMas" type="button">Ver mas</button>
+                              </div>
                             </div>
                         </div>
                 </div>
@@ -196,7 +254,7 @@
             <h5>Se el primero en enterarte!</h5>
             <div class="input-group mb-3 botonEmail">
               <input type="text" class="form-control inputEmail" placeholder="Email" aria-label="Email" aria-describedby="button-addon2">
-              <input class="btn btn-primary botonEnviarEmail" type="submit" value="Enviar">
+              <input class="btn botonEnviarEmail" type="submit" value="Enviar">
               <p>Unite y recibi todas las noticias y promos</p>
             </div>
           </div>
